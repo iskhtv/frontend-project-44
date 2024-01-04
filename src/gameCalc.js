@@ -53,5 +53,4 @@ function calcGame() {
     console.log(`Let's try again, ${user}!`);
   }
 }
-
 export default calcGame;
