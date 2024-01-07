@@ -24,7 +24,7 @@ https://asciinema.org/a/eeP3LL14mRkkdp7DE0EQiMASI
 Запуск: make brain-progression
 Пример: https://asciinema.org/a/ahEMhxYowmOBkJg5QU1UCviPN
 
-Игра "НОД"
+Игра "НОД" - наибольший общий делитель
 Запуск: make brain-gcd
 Пример: https://asciinema.org/a/o3YqpvpXaG4NwhmIUjfSvSnbC
 
