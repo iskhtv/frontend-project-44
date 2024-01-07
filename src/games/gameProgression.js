@@ -25,12 +25,3 @@ export function generateTask() {
 }
 
 export default { generateTask };
-
-/*
-  const progressionArrayForUser = progressionArray;
-  const correctAnswer = progressionArrayForUser[missedSymbol];
-  progressionArrayForUser[missedSymbol] = '..';
-  const questionForUser = progressionArray;
-
-  return { progressionArray };
-} */

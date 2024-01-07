@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "brain-games": "bin/games/brain-games.js",
+    "brain-games": "bin/brain-games.js",
     "brain-even": "bin/games/brain-even.js",
     "brain-calc": "bin/games/brain-calc.js",
     "brain-gsd": "bin/games/brain-gsd.js",
     "brain-pprime": "bin/games/brain-prime.js",
-    "brain-progression": "bin/brain-progression.js"
+    "brain-progression": "bin/progression/brain-progression.js"
   },
   "type": "module",
   "main": "index.js",
