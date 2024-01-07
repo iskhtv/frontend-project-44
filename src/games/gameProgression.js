@@ -19,8 +19,9 @@ export function generateTask() {
   const progression = getProgression();
   const missedSymbol = getRandomValue(1, progression.length);
   const correctAnswer = progression[missedSymbol];
-  const question = progression;
+  let question = progression;
   question[missedSymbol] = '..';
+  question = String(progression);
   return { question, correctAnswer, instruction };
 }
 
