@@ -1,6 +1,5 @@
 #!/usr/bin/env node
+import { play } from '../src/index.js';
+import { generateTask } from '../src/games/gameEvenCheck.js';
 
-import evenGame from '../src/gameEvenCheck.js';
-// import { getQuestionWithAnswer, description } from '../../src/gameEvenCheck.js';
-
-evenGame();
+play(generateTask);
