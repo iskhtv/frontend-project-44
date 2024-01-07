@@ -21,7 +21,7 @@ export function generateTask() {
   const correctAnswer = progression[missedSymbol];
   let question = progression;
   question[missedSymbol] = '..';
-  question = String(progression);
+  question = String(progression).replace(/,/g, ' ');
   return { question, correctAnswer, instruction };
 }
 
