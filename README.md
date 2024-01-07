@@ -26,7 +26,7 @@ https://asciinema.org/a/eeP3LL14mRkkdp7DE0EQiMASI
 
 Игра "НОД" - наибольший общий делитель
 Запуск: make brain-gcd
-Пример: https://asciinema.org/a/o3YqpvpXaG4NwhmIUjfSvSnbC
+Пример (победа, поражение): https://asciinema.org/a/o3YqpvpXaG4NwhmIUjfSvSnbC
 
 Игра "Простое ли число?"
 Запуск: make brain-prime
