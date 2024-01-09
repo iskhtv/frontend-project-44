@@ -1,10 +1,4 @@
-import { getRandomValue } from '../index.js';
-
-function getRandomSign() {
-  const signArray = ['+', '-', '*'];
-  const randomOperator = Math.floor(Math.random() * signArray.length);
-  return signArray[randomOperator];
-}
+import { getRandomValue, getRandomSign } from '../index.js';
 
 export function generateTask() {
   const instruction = 'What is the result of the expression?';

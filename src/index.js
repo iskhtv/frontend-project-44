@@ -1,10 +1,6 @@
 import readlineSync from 'readline-sync';
 import askUserName from './cli.js';
 
-function getRandomValue(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
 function provideInstructionForUser(instruction) {
   console.log(instruction);
 }
@@ -50,15 +46,61 @@ function play(generateTask) {
     if (result) {
       sayUserCorrect();
       roundPassed += 1;
+      if (roundPassed === rounds) {
+        congragulateUser(user);
+      }
     } else {
       userToTryAgain(userAnswer, currentRoundTask.correctAnswer, user);
       roundPassed = 0;
       break;
     }
   } while (roundPassed < rounds);
-  if (roundPassed === rounds) {
-    congragulateUser(user);
-  }
+}
+// Utils
+function getRandomValue(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
-export { getRandomValue, play };
+function getRandomSign() {
+  const signArray = ['+', '-', '*'];
+  const randomOperator = Math.floor(Math.random() * signArray.length);
+  return signArray[randomOperator];
+}
+
+function getGCDforPair(n, m) {
+  if (m !== 0) {
+    const k = n % m;
+    return getGCDforPair(m, k);
+  }
+  return n;
+}
+
+function isPrimeNumber(n) {
+  let answer;
+  for (let i = 2; i < n; i += 1) {
+    if (n % i === 0) return 'no';
+  }
+
+  if (n > 1 === true) {
+    answer = 'yes';
+  } else { answer = 'no'; }
+  return answer;
+}
+
+function getProgression() {
+  const progressionLength = getRandomValue(5, 10);
+  const progressionIncrement = getRandomValue(1, 10);
+  const firstProgressionValue = getRandomValue(1, 10);
+
+  const progressionArray = [];
+  progressionArray.length = progressionLength;
+  progressionArray[0] = firstProgressionValue;
+  for (let i = 1; i < progressionArray.length; i += 1) {
+    progressionArray[i] = progressionIncrement + progressionArray[i - 1];
+  }
+  return progressionArray;
+}
+
+export {
+  getRandomValue, getRandomSign, getGCDforPair, play, isPrimeNumber, getProgression,
+};

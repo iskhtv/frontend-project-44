@@ -1,12 +1,4 @@
-import { getRandomValue } from '../index.js';
-
-function getGCDforPair(n, m) {
-  if (m !== 0) {
-    const k = n % m;
-    return getGCDforPair(m, k);
-  }
-  return n;
-}
+import { getRandomValue, getGCDforPair } from '../index.js';
 
 export function generateTask() {
   const instruction = 'Find the greatest common divisor of given numbers.';
